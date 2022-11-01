@@ -27,7 +27,7 @@ const Work = () => {
         <p style={stylectx.mainTextColor} className={styles.descText} >
             Built with React.js. 
         </p>
-            <a style={stylectx.mainTextColor} className={styles.link} href="#home" target="_blank" rel="noreferrer">Useful Link</a>
+            <a style={stylectx.mainTextColor} className={styles.link} href="https://JoshuaBergman.dev/" target="_blank" rel="noreferrer">JoshuaBergman.dev</a>
       </Project>
       <Project
         title={"Mike's Frame Service"}
