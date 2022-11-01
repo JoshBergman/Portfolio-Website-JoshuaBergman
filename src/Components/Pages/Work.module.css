@@ -1,0 +1,17 @@
+.workContainer {
+    width: 100%;
+    height: fit-content;
+
+    margin-top: 100px;
+}
+
+.descText {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 680px) {
+
+    .descText {
+        text-align: center;
+    }
+}

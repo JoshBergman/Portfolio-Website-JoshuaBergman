@@ -28,3 +28,20 @@
 .subText {
     font-size: 29px;
 }
+
+.arrowContainer {
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+
+    margin-top: -35px;
+}
+
+.arrow {
+    font-size: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.arrow:hover {
+    transform: translateY(5px);
+}
