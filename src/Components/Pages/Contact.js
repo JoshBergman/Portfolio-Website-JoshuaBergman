@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import StyleData from "../../Store/styleContext";
-import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail, AiOutlinePhone, AiOutlineAudit } from "react-icons/ai";
 
 import styles from "./Contact.module.css";
 import Plug from "../UI/PageResources/Plug";
@@ -86,6 +86,25 @@ const Contact = () => {
           }
         >
           651 - 447 - 3238
+        </Plug>
+      </a>
+
+      <a
+        className={styles.socialLink}
+        style={stylectx.mainTextColor}
+        
+      >
+        <Plug
+          textStyle={stylectx.mainTextColor}
+          smallerText={true}
+          icon={
+            <AiOutlineAudit
+              style={stylectx.mainTextColor}
+              className={styles.icon}
+            />
+          }
+        >
+          Resume: On Request
         </Plug>
       </a>
     </div>

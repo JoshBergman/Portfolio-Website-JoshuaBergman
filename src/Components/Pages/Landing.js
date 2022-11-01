@@ -9,7 +9,7 @@ const Landing = () => {
     const stylectx = useContext(StyleData);
 
     return (
-        <React.Fragment>
+        <div className={styles.master}>
             <div className={styles.primaryContainer} id="home">
                 <div className={styles.contentContainer}>
                     <div className={styles.nameContainer}>
@@ -23,7 +23,7 @@ const Landing = () => {
             <div className={styles.arrowContainer}>
                 <FaLongArrowAltDown style={stylectx.mainTextColor} className={styles.arrow} />
             </div>
-        </React.Fragment>
+        </div>
     );
 };
 

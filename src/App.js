@@ -16,10 +16,15 @@ function App() {
 
   document.body.style = 'background: ' + stylectx.pageColor + ";";
 
+  const gradientStyle = {
+    backgroundImage: `linear-gradient(to bottom,  ${stylectx.mutedColorBackground["backgroundColor"]} 0%,${stylectx.pageColor} 30%)`
+  };
+
   return (
     <React.Fragment>
       <Header />
       <div id="portal-root"></div>
+      <div style={gradientStyle}>
       <PageTemplate>
         <div style={{"width" : "100%", "height" : "100px"}} />
         <Landing />
@@ -32,6 +37,7 @@ function App() {
         </HeadingText>
         <Contact />
       </PageTemplate>
+      </div>
       <Footer />
     </React.Fragment>
   );
