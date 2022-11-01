@@ -9,9 +9,22 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.link {
+    text-align: center;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
 @media (max-width: 680px) {
 
     .descText {
         text-align: center;
+    }
+
+    .link {
+        text-align: center;
+        margin: 0 auto;
     }
 }

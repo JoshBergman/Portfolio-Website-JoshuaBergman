@@ -10,7 +10,7 @@ const Landing = () => {
 
     return (
         <React.Fragment>
-            <div className={styles.primaryContainer}>
+            <div className={styles.primaryContainer} id="home">
                 <div className={styles.contentContainer}>
                     <div className={styles.nameContainer}>
                         <img className={styles.nameImg} src={signature} alt="Signature of Joshua Bergman"/>

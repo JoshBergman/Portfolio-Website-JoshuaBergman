@@ -8,9 +8,9 @@ import StyleData from "../../Store/styleContext";
 
 const Work = () => {
     const stylectx = useContext(StyleData);
-    
+
   return (
-    <div className={styles.workContainer}>
+    <div id="work" className={styles.workContainer}>
       <Project
         title={"Mike's Frame Service"}
         img={mikesFramePic}
@@ -23,7 +23,7 @@ const Work = () => {
         <p style={stylectx.mainTextColor} className={styles.descText} >
             Built using MERN, later optimized to run in react only for performance.
         </p>
-
+        <a style={stylectx.mainTextColor} className={styles.link} href="https://mikesframe-25201.web.app/home" target="_blank" rel="noreferrer">MikesFrameService.com</a>
       </Project>
       <Project
        title={"Quick Budget Tool"}
@@ -35,8 +35,9 @@ const Work = () => {
             The tool was later adapted to calculate multiple standardized budgets.
         </p>
         <p style={stylectx.mainTextColor} className={styles.descText} >
-            Built using MERN, later optimized to run in react only for performance.
+            Built using MERN stack. 
         </p>
+            <a style={stylectx.mainTextColor} className={styles.link} href="https://quickbudgettool.com/" target="_blank" rel="noreferrer">QuickBudgetTool.com</a>
        </Project>
     </div>
   );
