@@ -1,0 +1,30 @@
+.primaryContainer {
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.contentContainer {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.nameContainer {
+    width: 100%;
+    height: fit-content;
+}
+
+.subTextContainer {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+.nameImg {
+    width: 100%;
+}
+
+.subText {
+    font-size: 29px;
+}
