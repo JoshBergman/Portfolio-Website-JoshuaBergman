@@ -5,6 +5,7 @@ const StyleData = createContext({
     mainColorBackground : "Style Object",
     mainTextColor : "Style Object",
     mutedColorBackground : "Style Object",
+    pageColor : "Style Object",
     isDark : false,
 });
 
@@ -28,16 +29,18 @@ export const StyleContextProvider = (props) => {
         mainColorBackground : {"backgroundColor" : "#EFEFEF"},
         mainTextColor : {"color" : "black"},
         mutedColorBackground : {"backgroundColor" : "#E1E1E1"},
+        pageColor : "#EFEFEF",
         isDark : false,
     };
-
+    
     if (isDark) {
         context = {
-        toggleDarkMode : toggleDarkMode,
-        mainColorBackground : {"backgroundColor" : "black"},
-        mainTextColor : {"color" : "white"},
-        mutedColorBackground : {"backgroundColor" : "#181818"},
-        isDark : true,
+            toggleDarkMode : toggleDarkMode,
+            mainColorBackground : {"backgroundColor" : "black"},
+            mainTextColor : {"color" : "white"},
+            mutedColorBackground : {"backgroundColor" : "#181818"},
+            pageColor : "#393939",
+            isDark : true,
         }
     }
 
