@@ -1,0 +1,7 @@
+.containerDiv {
+    background-color : blue;
+    height: fit-content;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
