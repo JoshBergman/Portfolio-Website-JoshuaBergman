@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { Link } from "react-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CgDarkMode } from 'react-icons/cg';
 
@@ -32,9 +33,9 @@ const MobileHeader = (props) => {
     <React.Fragment>
       <div style={stylectx.mainColorBackground} className={styles.headerDiv}>
         <div className={styles.logoDiv}>
-          <a href="#home">
+          <Link smooth={true} to="home">
             <img src={props.logoImg} className={styles.logoImg} alt="Logo" />
-          </a>
+          </Link>
         </div>
         <div className={styles.hamburgerContainer}>
           <button

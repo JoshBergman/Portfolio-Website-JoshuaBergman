@@ -1,0 +1,16 @@
+.plugContainer {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.title {
+    display: inline;
+    font-size: 26px;
+}
+
+.smallText {
+    display: inline;
+    font-size: 20px;
+}

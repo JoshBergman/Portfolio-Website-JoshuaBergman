@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-scroll";
 import { CgDarkMode } from 'react-icons/cg';
 
 import styles from "./DesktopHeader.module.css";
@@ -25,17 +26,17 @@ const DesktopHeader = (props) => {
     <div style={stylectx.mainColorBackground} className={styles.headerDiv}>
       <div className={styles.contentContainer}>
         <div className={styles.logoDiv}>
-          <a href="#home">
+          <Link smooth={true} to="home">
             <img src={props.logoImg} className={styles.logoImg} alt="Logo"/>
-          </a>
+          </Link>
         </div>
         <div className={styles.navDiv}>
-          <a style={stylectx.mainTextColor} className={styles.navAnchor} href="#work">
+          <Link style={stylectx.mainTextColor} className={styles.navAnchor} smooth={true} to="work">
             Work
-          </a>
-          <a style={stylectx.mainTextColor} className={styles.navAnchor} href="#contact">
+          </Link>
+          <Link style={stylectx.mainTextColor} className={styles.navAnchor} smooth={true} to="contact">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
       <button className={styles.button} onClick={darkModeHandler}><CgDarkMode style={darkModeIconStyle} className={styles.darkModeIcon} /></button>

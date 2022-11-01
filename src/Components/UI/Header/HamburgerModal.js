@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
+import { Link } from "react-scroll";
 
 import styles from "./HamburgerModal.module.css";
 import StyleData from "../../../Store/styleContext";
@@ -12,27 +13,30 @@ const HamburgerModal = (props) => {
       <div className={styles.modalDiv} onClick={props.menuToggler}>
         <div style={stylectx.mutedColorBackground} className={styles.menuDiv}>
             <div className={styles.menuSpacer} />
-              <a
+              <Link
                 style={stylectx.mainTextColor}
                 className={styles.navAnchor}
-                href="#home"
+                to="home"
+                smooth={true}
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 style={stylectx.mainTextColor}
                 className={styles.navAnchor}
-                href="#work"
+                to="work"
+                smooth={true}
               >
                 Work
-              </a>
-              <a
+              </Link>
+              <Link
                 style={stylectx.mainTextColor}
                 className={styles.navAnchor}
-                href="#contact"
+                to="contact"
+                smooth={true}
               >
                 Contact
-              </a>
+              </Link>
             </div>
       </div>
     ,
