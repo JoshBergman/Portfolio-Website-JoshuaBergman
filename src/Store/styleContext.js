@@ -4,6 +4,7 @@ const StyleData = createContext({
     toggleDarkMode : () => {},
     mainColorBackground : "Style Object",
     mainTextColor : "Style Object",
+    mutedColorBackground : "Style Object",
     isDark : false,
 });
 
@@ -26,6 +27,7 @@ export const StyleContextProvider = (props) => {
         toggleDarkMode : toggleDarkMode,
         mainColorBackground : {"backgroundColor" : "#EFEFEF"},
         mainTextColor : {"color" : "black"},
+        mutedColorBackground : {"backgroundColor" : "#E1E1E1"},
         isDark : false,
     };
 
@@ -34,6 +36,7 @@ export const StyleContextProvider = (props) => {
         toggleDarkMode : toggleDarkMode,
         mainColorBackground : {"backgroundColor" : "black"},
         mainTextColor : {"color" : "white"},
+        mutedColorBackground : {"backgroundColor" : "#181818"},
         isDark : true,
         }
     }

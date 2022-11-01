@@ -8,6 +8,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
+      <div id="portal-root"></div>
       <PageTemplate>
         This is words
       </PageTemplate>
