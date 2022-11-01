@@ -20,7 +20,6 @@ export const StyleContextProvider = (props) => {
         } else {
             localStorage.setItem("DARK", "false");
         }
-        console.log(isDark);
     };
 
     let context = {

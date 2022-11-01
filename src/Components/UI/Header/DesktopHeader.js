@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { CgDarkMode } from 'react-icons/cg';
 
 import styles from "./DesktopHeader.module.css";
 import StyleData from "../../../Store/styleContext";
@@ -9,6 +10,16 @@ const DesktopHeader = (props) => {
   const darkModeHandler = () => {
     stylectx.toggleDarkMode();
   };
+
+  const darkModeIconStyle = {
+    "transform" : "rotate(0deg)",
+    "color" : stylectx.mainTextColor["color"]
+  }
+
+  if (stylectx.isDark) {
+    darkModeIconStyle["transform"] = "rotate(180deg)"
+    darkModeIconStyle["color"] = stylectx.mainTextColor["color"]
+  }
 
   return (
     <div style={stylectx.mainColorBackground} className={styles.headerDiv}>
@@ -25,9 +36,9 @@ const DesktopHeader = (props) => {
           <a style={stylectx.mainTextColor} className={styles.navAnchor} href="#contact">
             Contact
           </a>
-          <button onClick={darkModeHandler}>Dark Mode</button>
         </div>
       </div>
+      <button className={styles.button} onClick={darkModeHandler}><CgDarkMode style={darkModeIconStyle} className={styles.darkModeIcon} /></button>
     </div>
   );
 };
