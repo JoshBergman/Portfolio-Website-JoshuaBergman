@@ -89,7 +89,7 @@ const Contact = () => {
         </Plug>
       </a>
 
-      <a
+      <p
         className={styles.socialLink}
         style={stylectx.mainTextColor}
         
@@ -106,7 +106,7 @@ const Contact = () => {
         >
           Resume: On Request
         </Plug>
-      </a>
+      </p>
     </div>
   );
 };
