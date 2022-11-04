@@ -12,7 +12,7 @@ const StyleData = createContext({
 export const StyleContextProvider = (props) => {
     const currDark = localStorage.getItem("DARK");
     const [isDark, setIsDark] = useState(
-        currDark === null || currDark === "false" ? false : true
+        currDark === null || currDark === "true" ? true : false
         );
 
     const toggleDarkMode = () => {

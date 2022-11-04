@@ -22,7 +22,6 @@ const Work = () => {
         <p style={stylectx.mainTextColor} className={styles.descText} >
             My best work has unfortunately been signed under NDA,
             of that work all I can say is that I built a small shop using the MERN stack and utilized basic CRUD operations.
-            Don't forget to view dark mode!
         </p>
         <p style={stylectx.mainTextColor} className={styles.descText} >
             Built with React.js. 
