@@ -10,6 +10,7 @@ import Landing from './Components/Pages/Landing';
 import Work from './Components/Pages/Work';
 import Contact from './Components/Pages/Contact';
 import Footer from './Components/UI/Footer/Footer';
+import AboutMe from './Components/Pages/AboutMe';
 
 function App() {
   const stylectx = useContext(StyleData);
@@ -28,13 +29,11 @@ function App() {
       <PageTemplate>
         <div style={{"width" : "100%", "height" : "100px"}} />
         <Landing />
-        <HeadingText>
-          My Work
-        </HeadingText>
+        <HeadingText>My Work</HeadingText>
         <Work />
-        <HeadingText>
-          Contact Me
-        </HeadingText>
+        <HeadingText>About Me</HeadingText>
+        <AboutMe />
+        <HeadingText>Contact Me</HeadingText>
         <Contact />
       </PageTemplate>
       </div>

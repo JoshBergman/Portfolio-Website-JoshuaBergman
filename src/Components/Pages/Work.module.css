@@ -10,7 +10,19 @@
 }
 
 .link {
-    text-align: center;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+}
+
+.linkIcon {
+    text-align: left;
+    display: block;
+    text-decoration: none;
+}
+
+.linkIcon:hover {
+    text-decoration: underline;
 }
 
 .link:hover {
