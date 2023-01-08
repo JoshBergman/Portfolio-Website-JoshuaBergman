@@ -32,6 +32,14 @@ const HamburgerModal = (props) => {
               <Link
                 style={stylectx.mainTextColor}
                 className={styles.navAnchor}
+                to="about"
+                smooth={true}
+              >
+                About Me
+              </Link>
+              <Link
+                style={stylectx.mainTextColor}
+                className={styles.navAnchor}
                 to="contact"
                 smooth={true}
               >

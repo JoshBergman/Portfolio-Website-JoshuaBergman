@@ -34,6 +34,9 @@ const DesktopHeader = (props) => {
           <Link style={stylectx.mainTextColor} className={styles.navAnchor} smooth={true} to="work">
             Work
           </Link>
+          <Link style={stylectx.mainTextColor} className={styles.navAnchor} smooth={true} to="about">
+            About
+          </Link>
           <Link style={stylectx.mainTextColor} className={styles.navAnchor} smooth={true} to="contact">
             Contact
           </Link>

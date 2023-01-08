@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from "react-scroll";
 import { FaLongArrowAltDown } from 'react-icons/fa';
 
 import styles from './Landing.module.css';
@@ -9,7 +10,7 @@ const Landing = () => {
     const stylectx = useContext(StyleData);
 
     return (
-        <div className={styles.master}>
+        <React.Fragment>
             <div className={styles.primaryContainer} id="home">
                 <div className={styles.contentContainer}>
                     <div className={styles.nameContainer}>
@@ -21,9 +22,9 @@ const Landing = () => {
                 </div>
             </div>
             <div className={styles.arrowContainer}>
-                <FaLongArrowAltDown style={stylectx.mainTextColor} className={styles.arrow} />
+                <Link smooth={true} to="work" ><FaLongArrowAltDown style={stylectx.mainTextColor} className={styles.arrow} /></Link>
             </div>
-        </div>
+        </React.Fragment>
     );
 };
 

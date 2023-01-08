@@ -33,8 +33,6 @@
     margin: 0 auto;
     width: fit-content;
     height: fit-content;
-
-    margin-top: -35px;
 }
 
 .arrow {
@@ -43,5 +41,5 @@
 }
 
 .arrow:hover {
-    transform: translateY(5px);
+    transform: translateY(3px);
 }

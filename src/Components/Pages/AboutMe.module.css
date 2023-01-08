@@ -1,9 +1,17 @@
 .aboutMeContainer {
-    margin-top: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
     box-shadow: 0px 0px 15px black;
+    margin: 0 auto;
+    margin-top: 75px;
 }
 
 .textContainer {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
+}
+
+.text {
+    font-size: 14px;
 }
